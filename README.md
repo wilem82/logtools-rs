@@ -95,3 +95,16 @@ Far from being fully-featured.
 Shifts the timestamp of all log messages by the specified amount of hours.
 
 Far from being fully-featured.
+
+# logplot
+
+Generates an SVG chart for log entries per second. Typically one log entry corresponds to one network request or something.
+
+Example:
+```
+logplot accesslog.log -o rps.svg -w 1300
+```
+
+As always, what a log entry is and how to parse its timestamp is defined via command line arguments.
+
+Far from being fully-featured.
